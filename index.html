@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlickrSearch</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <div class="textNumber">
+        <label for="text">Tag</label>
+        <input type="text" name="text" id="typeInput" value="hotpink" />
+
+        <label for="number">Amount</label>
+        <input
+          type="number"
+          name="number"
+          id="numberInput"
+          value="1"
+          min="1"
+          max="50"
+        />
+
+        <button id="formButton">Submit</button>
+      </div>
+
+      <ul>
+        <li>
+          <input type="radio" name="size" id="small" value="m" checked />
+          <label for="small">S</label>
+        </li>
+        <li>
+          <input type="radio" name="size" id="medium" value="w" />
+          <label for="meduim">M</label>
+        </li>
+        <li>
+          <input type="radio" name="size" id="large" value="z" />
+          <label for="large">L</label>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <input
+            type="radio"
+            name="sort"
+            id="interestDesc"
+            value="interestingness-desc"
+            checked
+          />
+          <label for="interestDesc">Interest descending</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="sort"
+            id="interestAsc"
+            value="interestingness-asc"
+          />
+          <label for="interestAsc">Interest ascending</label>
+        </li>
+        <li>
+          <input type="radio" name="sort" id="relevance" value="relevance" />
+          <label for="relevance">Relevance</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="sort"
+            id="dateDesc"
+            value="date-posted-desc"
+          />
+          <label for="dateDesc">Date descending</label>
+        </li>
+        <li>
+          <input
+            type="radio"
+            name="sort"
+            id="dateAsc"
+            value="date-posted-asc"
+          />
+          <label for="dateAsc">Date Ascending</label>
+        </li>
+      </ul>
+    </form>
+    <article></article>
+    <h1 id="errorMessage"></h1>
+  </body>
+</html>

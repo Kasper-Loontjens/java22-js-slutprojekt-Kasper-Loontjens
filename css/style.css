@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: darkslategrey;
+}
+form{
+    background-color:rgb(38, 63, 63);
+    padding: 1%;
+    display: flex;
+}
+input{
+    margin: 2px;
+    max-height: 20px;
+}
+ul{
+    margin: 2px;
+    padding: 1px;
+    border: 1px solid black;
+}
+li{
+    list-style: none;
+}
+button{
+    max-height: 20px;
+    background-color: brown;
+    color: white;
+    margin: 2px;
+}
+.textNumber{
+    display: flex;
+    flex-direction: column;
+}
