@@ -81,6 +81,7 @@ function getPhotos(urlObject){
 }
 
 // Creates in anchor element along with an image element to be shown on the page
+// The anchor takes the user to a page showing the picture they clicked on
 function createImage(link){
     const img = document.createElement("img");
     const imgAnchor = document.createElement("a");
